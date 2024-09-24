@@ -1,4 +1,4 @@
-name: fsdl-text-recognizer-2022
+name: FOG
 channels:
   - pytorch
   - nvidia

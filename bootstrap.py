@@ -13,6 +13,7 @@ try:  # check if we're in a git repo
 except subprocess.CalledProcessError:
     repo = os.environ.get("FSDL_REPO", "FOG")
         
+print(repo)
 branch = os.environ.get("FSDL_BRANCH", "main")
 token = os.environ.get("FSDL_GHTOKEN")
 prefix = token + "@" if token else ""
