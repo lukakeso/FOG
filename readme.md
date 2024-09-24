@@ -16,7 +16,7 @@ Our prediction system is wrapped in a frontend written in Python using [Gradio](
 ## Colab Demo
 
 <div align="center">
-  <a href="https://colab.research.google.com/github/lukakeso/FOG/blob/main/src/notebooks/lab07_deployment.ipynb"> <img src=https://colab.research.google.com/assets/colab-badge.svg width=240> </a>
+  <a href="https://colab.research.google.com/github/lukakeso/FOG/blob/main/src/notebooks/demo.ipynb"> <img src=https://colab.research.google.com/assets/colab-badge.svg width=240> </a>
 </div> <br>
 
 ## Local installation
