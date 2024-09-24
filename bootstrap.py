@@ -69,4 +69,7 @@ def _install_dependencies_colab():
 def get_repo():
     return "fsdl-text-recognizer-2021-training"
 
+def get_wandb_api():
+    return "5d7a1f7f035cccc5e38180ec8b17c026454dbb7a"
+
 _go()
