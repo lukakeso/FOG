@@ -37,14 +37,8 @@ def _go():
         os.chdir(repo_dir)
         
         
-def change_to_lab_dir(lab_idx=None):
-    if lab_idx is None:
-        return
-    
-    if not repo.endswith("labs"):
-        return  # this is only needed in the labs repo
-
-    lab_name = f"lab{str(lab_idx).zfill(2)}"
+def change_to_lab_dir():
+    lab_name = "src"
     cwd = Path.cwd().name
     if cwd != lab_name:  # if we're not in the lab directory
         if cwd != repo:  # check that we're in the repo root
@@ -71,6 +65,8 @@ def _install_dependencies_colab():
     import pkg_resources
     
     pkg_resources._initialize_master_working_set()
-    
+
+def get_repo():
+    return "fsdl-text-recognizer-2021-training"
 
 _go()
