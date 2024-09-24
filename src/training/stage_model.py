@@ -35,7 +35,7 @@ LITMODEL_CLASS = TransformerLitModel
 api = wandb.Api()
 
 DEFAULT_ENTITY = api.default_entity
-DEFAULT_FROM_PROJECT = "fsdl-text-recognizer-2022-training"
+DEFAULT_FROM_PROJECT = "fsdl-text-recognizer-2021-training"
 DEFAULT_TO_PROJECT = "fsdl-text-recognizer-2022-training"
 DEFAULT_STAGED_MODEL_NAME = "paragraph-text-recognizer"
 
@@ -232,7 +232,7 @@ def _setup_parser():
     parser.add_argument(
         "--entity",
         type=str,
-        default=None,
+        default="cfrye59",
         help=f"Entity from which to download the checkpoint. Note that checkpoints are always uploaded to the logged-in wandb entity. Pass the value 'DEFAULT' to also download from default entity, which is currently {DEFAULT_ENTITY}.",
     )
     parser.add_argument(

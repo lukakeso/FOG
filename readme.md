@@ -23,4 +23,20 @@ Our prediction system is wrapped in a frontend written in Python using [Gradio](
 
 ```
 conda env create -f environment.yml
+wandb login <WANDB_API_KEY>
+cd src
 ```
+**Local deployment of the frontend and backend**
+```
+PYTHONPATH="$PWD" python training/stage_model.py --fetch
+PYTHONPATH="$PWD" python app_gradio/app.py
+```
+
+**Local deployment of the frontend and AWS backend**
+
+```
+PYTHONPATH="$PWD" python app_gradio/app.py \
+  --model_url https://3akxma777p53w57mmdika3sflu0fvazm.lambda-url.us-west-1.on.aws/
+```
+
+

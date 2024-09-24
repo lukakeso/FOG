@@ -35,6 +35,7 @@ def _go():
 
     else: # move to the repo root
         os.chdir(repo_dir)
+        _install_dependencies_colab()
         
         
 def change_to_lab_dir():
