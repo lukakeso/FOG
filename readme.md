@@ -40,3 +40,9 @@ PYTHONPATH="$PWD" python app_gradio/app.py \
 ```
 
 
+https://github.com/the-full-stack/fsdl-text-recognizer-2022-labs
+
+
+## Acknowledgement
+
+Our code is largely based on the following open-source projects: [FSDL-Text-Recognizer](https://github.com/the-full-stack/fsdl-text-recognizer-2022-labs).
